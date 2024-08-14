@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>File Upload Test</title>
+  </head>
+  <body>
+    <form
+      action="http://localhost:9000/api/v3/app/events"
+      method="post"
+      enctype="multipart/form-data"
+    >
+      <input type="text" name="name" value="Test Event" />
+      <input type="file" name="files" />
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
